@@ -163,15 +163,7 @@ export default function Home() {
           S4 — ARTLANTA FEATURE
       ══════════════════════════════════════════ */}
       <section className="artlanta-feature">
-        <div className="artlanta-feature__inner">
-          <div className="artlanta-feature__visual reveal">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="https://images.squarespace-cdn.com/content/v1/696ee64a2136380e1eba3b64/5cf031cb-aa3d-4861-8c34-1de5e216d280/web1a.png"
-              alt="Artlanta — Piedmont Park festival environment"
-              loading="lazy"
-            />
-          </div>
+        <div className="artlanta-feature__inner artlanta-feature__inner--no-img">
           <div className="artlanta-feature__content">
             <p className="artlanta-feature__label reveal">Featured Festival</p>
             <h2 className="artlanta-feature__name reveal reveal-delay-1">Artlanta</h2>
@@ -207,25 +199,26 @@ export default function Home() {
             </Link>
           </div>
 
+          {/* ── FEATURED ARTIST: Omar "Chilly-O" Mitchell ── */}
           <div className="featured-art__primary reveal">
             <div className="featured-art__img">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/assets/rich_homie_quan.jpg"
-                alt="Rich Homie Quan — Atlanta artist portrait. Classic Atlanta Project."
+                alt="Rich Homie Quan — photographed by Omar Chilly-O Mitchell. Classic Atlanta Project."
                 loading="lazy"
               />
             </div>
             <div className="featured-art__caption">
-              <p className="featured-art__overline">The Classic Atlanta Project</p>
-              <h3 className="featured-art__title">Atlanta&apos;s story, told by Atlanta.</h3>
+              <p className="featured-art__overline">Featured Artist</p>
+              <h3 className="featured-art__title">Omar &ldquo;Chilly-O&rdquo; Mitchell</h3>
               <p className="featured-art__body">
-                A living archive of the people, places, and voices that continue to define the city.
-                The Classic Atlanta Project documents Atlanta&apos;s cultural figures — the ones you
-                know and the ones you should.
+                Atlanta-based photographer and visual artist. Chilly-O&apos;s lens captures the
+                people, energy, and identity of the city — portraits, street work, and editorial
+                that document Atlanta on its own terms.
               </p>
               <Link href="/stories" className="btn-text">
-                Explore the Archive
+                View the Archive
               </Link>
             </div>
           </div>
@@ -235,93 +228,149 @@ export default function Home() {
               <div className="featured-art__slot-img img-wrap r-3-2">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://images.squarespace-cdn.com/content/v1/696ee64a2136380e1eba3b64/95e8ec0e-420b-4c3e-b442-b72d1edf0db6/61df51b4-9aee-47c2-bc1d-b7909c7b90b24fd0a171fc339bb904_outkast+mural.jpg"
-                  alt="Outkast Mural — Atlanta"
+                  src="/assets/chillyo/love-me-hoodie.jpg"
+                  alt="Love Me Hoodie — Omar Chilly-O Mitchell"
                   loading="lazy"
                 />
               </div>
               <div className="featured-art__slot-caption">
-                <p className="t-label" style={{ marginBottom: "0.4rem" }}>
-                  Public Art
-                </p>
-                <p className="featured-art__slot-title">Citywide Installations</p>
-                <p className="featured-art__slot-body">
-                  Works across Atlanta&apos;s parks, landmarks, and public corridors beginning May
-                  2026.
-                </p>
+                <p className="t-label" style={{ marginBottom: "0.4rem" }}>Photography</p>
+                <p className="featured-art__slot-title">Love Me Hoodie</p>
+                <p className="featured-art__slot-body">Omar &ldquo;Chilly-O&rdquo; Mitchell</p>
               </div>
             </div>
 
             <div className="featured-art__slot">
-              <div
-                className="featured-art__slot-img img-wrap r-3-2"
-                style={{
-                  background: "var(--whisper)",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <p
-                  style={{
-                    fontSize: "0.75rem",
-                    color: "var(--ink-4)",
-                    letterSpacing: "0.1em",
-                    textTransform: "uppercase",
-                    padding: "2rem",
-                    textAlign: "center",
-                  }}
-                >
-                  Featured Artist
-                  <br />
-                  Coming Soon
-                </p>
+              <div className="featured-art__slot-img img-wrap r-3-2">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/assets/chillyo/life-is-art.jpg"
+                  alt="Life is Art — Omar Chilly-O Mitchell"
+                  loading="lazy"
+                />
               </div>
               <div className="featured-art__slot-caption">
-                <p className="t-label" style={{ marginBottom: "0.4rem" }}>
-                  Artist Spotlight
-                </p>
-                <p className="featured-art__slot-title">Announcing Soon</p>
-                <p className="featured-art__slot-body">
-                  Artist features and spotlights will be added as the program develops.
-                </p>
+                <p className="t-label" style={{ marginBottom: "0.4rem" }}>Photography</p>
+                <p className="featured-art__slot-title">Life is Art</p>
+                <p className="featured-art__slot-body">Omar &ldquo;Chilly-O&rdquo; Mitchell</p>
               </div>
             </div>
 
             <div className="featured-art__slot">
-              <div
-                className="featured-art__slot-img img-wrap r-3-2"
-                style={{
-                  background: "var(--whisper)",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <p
-                  style={{
-                    fontSize: "0.75rem",
-                    color: "var(--ink-4)",
-                    letterSpacing: "0.1em",
-                    textTransform: "uppercase",
-                    padding: "2rem",
-                    textAlign: "center",
-                  }}
-                >
-                  Artifact Preview
-                  <br />
-                  Coming Soon
-                </p>
+              <div className="featured-art__slot-img img-wrap r-3-2">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/assets/chillyo/inner-child.jpg"
+                  alt="Inner Child — Omar Chilly-O Mitchell"
+                  loading="lazy"
+                />
               </div>
               <div className="featured-art__slot-caption">
-                <p className="t-label" style={{ marginBottom: "0.4rem" }}>
-                  Artifact
-                </p>
-                <p className="featured-art__slot-title">Limited Pieces</p>
-                <p className="featured-art__slot-body">
-                  Limited pieces and cultural keepsakes connected to a singular moment in the life
-                  of the city.
-                </p>
+                <p className="t-label" style={{ marginBottom: "0.4rem" }}>Photography</p>
+                <p className="featured-art__slot-title">Inner Child</p>
+                <p className="featured-art__slot-body">Omar &ldquo;Chilly-O&rdquo; Mitchell</p>
+              </div>
+            </div>
+          </div>
+
+          {/* ── CHILLY-O EXTENDED GRID ── */}
+          <div className="featured-art__grid reveal" style={{ marginTop: "2px" }}>
+            <div className="featured-art__slot">
+              <div className="featured-art__slot-img img-wrap r-3-2">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/assets/chillyo/kings-on-the-block.png"
+                  alt="Kings on the Block — Omar Chilly-O Mitchell"
+                  loading="lazy"
+                />
+              </div>
+              <div className="featured-art__slot-caption">
+                <p className="t-label" style={{ marginBottom: "0.4rem" }}>Photography</p>
+                <p className="featured-art__slot-title">Kings on the Block</p>
+                <p className="featured-art__slot-body">Omar &ldquo;Chilly-O&rdquo; Mitchell</p>
+              </div>
+            </div>
+
+            <div className="featured-art__slot">
+              <div className="featured-art__slot-img img-wrap r-3-2">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/assets/chillyo/we-up-future.jpg"
+                  alt="We Up Future — Omar Chilly-O Mitchell"
+                  loading="lazy"
+                />
+              </div>
+              <div className="featured-art__slot-caption">
+                <p className="t-label" style={{ marginBottom: "0.4rem" }}>Photography</p>
+                <p className="featured-art__slot-title">We Up Future</p>
+                <p className="featured-art__slot-body">Omar &ldquo;Chilly-O&rdquo; Mitchell</p>
+              </div>
+            </div>
+
+            <div className="featured-art__slot">
+              <div className="featured-art__slot-img img-wrap r-3-2">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/assets/chillyo/wheel-of-fortune.jpg"
+                  alt="Wheel of Fortune 2024 — Omar Chilly-O Mitchell"
+                  loading="lazy"
+                />
+              </div>
+              <div className="featured-art__slot-caption">
+                <p className="t-label" style={{ marginBottom: "0.4rem" }}>Photography</p>
+                <p className="featured-art__slot-title">Wheel of Fortune</p>
+                <p className="featured-art__slot-body">Omar &ldquo;Chilly-O&rdquo; Mitchell</p>
+              </div>
+            </div>
+          </div>
+
+          {/* ── CHILLY-O FINAL ROW ── */}
+          <div className="featured-art__grid reveal" style={{ marginTop: "2px" }}>
+            <div className="featured-art__slot">
+              <div className="featured-art__slot-img img-wrap r-3-2">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/assets/chillyo/gulch-75.png"
+                  alt="Gulch 75 — Omar Chilly-O Mitchell"
+                  loading="lazy"
+                />
+              </div>
+              <div className="featured-art__slot-caption">
+                <p className="t-label" style={{ marginBottom: "0.4rem" }}>Photography</p>
+                <p className="featured-art__slot-title">Gulch 75</p>
+                <p className="featured-art__slot-body">Omar &ldquo;Chilly-O&rdquo; Mitchell</p>
+              </div>
+            </div>
+
+            <div className="featured-art__slot">
+              <div className="featured-art__slot-img img-wrap r-3-2">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/assets/chillyo/im-so-atl.jpg"
+                  alt="Im So ATL — Omar Chilly-O Mitchell"
+                  loading="lazy"
+                />
+              </div>
+              <div className="featured-art__slot-caption">
+                <p className="t-label" style={{ marginBottom: "0.4rem" }}>Photography</p>
+                <p className="featured-art__slot-title">I&apos;m So ATL</p>
+                <p className="featured-art__slot-body">Omar &ldquo;Chilly-O&rdquo; Mitchell</p>
+              </div>
+            </div>
+
+            <div className="featured-art__slot">
+              <div className="featured-art__slot-img img-wrap r-3-2">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/assets/chillyo/todays-muse.png"
+                  alt="Today's Muse Project — Omar Chilly-O Mitchell"
+                  loading="lazy"
+                />
+              </div>
+              <div className="featured-art__slot-caption">
+                <p className="t-label" style={{ marginBottom: "0.4rem" }}>Photography</p>
+                <p className="featured-art__slot-title">Today&apos;s Muse Project</p>
+                <p className="featured-art__slot-body">Omar &ldquo;Chilly-O&rdquo; Mitchell</p>
               </div>
             </div>
           </div>
