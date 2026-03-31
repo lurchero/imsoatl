@@ -175,21 +175,12 @@ export default function Home() {
           <div className="artlanta-feature__content">
             <p className="artlanta-feature__label reveal">Featured Festival</p>
             <h2 className="artlanta-feature__name reveal reveal-delay-1">Artlanta</h2>
-            <p className="artlanta-feature__sub reveal reveal-delay-1">
-              The flagship festival of I&apos;M SO ATL
-            </p>
             <div className="reveal reveal-delay-2" style={{ marginBottom: "2rem", alignSelf: "flex-start" }}>
               <span className="tag-red">
                 <span className="tag-red__dot" />
                 Applications Open · Aug 7–9, 2026
               </span>
             </div>
-            <p className="artlanta-feature__body reveal reveal-delay-2">
-              For three days, Piedmont Park becomes the centerpiece of a city transformed by art.
-              Artlanta brings together visual artists and visual art vendors of all disciplines
-              within a large-scale public environment — 50+ planned structures — shaped by
-              installation, performance, food, music, and immersive activation.
-            </p>
             <div className="reveal reveal-delay-3">
               <Link href="/festival" className="btn btn-primary">
                 View the Festival
