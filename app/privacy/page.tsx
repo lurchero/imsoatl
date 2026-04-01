@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Privacy Policy — I'M SO ATL",
-  description: "Privacy policy for imsoatl.org and the I'M SO ATL platform.",
+  description: "Privacy policy for the I'M SO ATL platform.",
 };
 
 export default function Privacy() {
@@ -29,7 +29,7 @@ export default function Privacy() {
               I&apos;M SO ATL (&quot;we,&quot; &quot;our,&quot; or &quot;the platform&quot;) is
               operated by AMAAC Foundation, a 501(c)(3) nonprofit organization. This privacy
               policy describes how we collect, use, and protect information you provide when using
-              our website at imsoatl.org.
+              our website at imsoatl.org (launching as our production domain).
             </p>
 
             <h2>Information We Collect</h2>

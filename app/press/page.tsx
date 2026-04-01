@@ -5,6 +5,20 @@ export const metadata: Metadata = {
   title: "Press — I'M SO ATL",
   description:
     "Press resources, media contacts, and official boilerplate for I'M SO ATL and Artlanta 2026.",
+  openGraph: {
+    title: "Press — I'M SO ATL",
+    description: "Press resources, media contacts, and official boilerplate for I'M SO ATL and Artlanta 2026.",
+    url: "https://imsoatl.org/press",
+    siteName: "I'M SO ATL",
+    images: [{ url: "https://imsoatl.org/assets/chillyo/kings-on-the-block.png", alt: "Atlanta culture — I'M SO ATL" }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Press — I'M SO ATL",
+    description: "Press resources, media contacts, and official boilerplate for I'M SO ATL and Artlanta 2026.",
+    images: ["https://imsoatl.org/assets/chillyo/kings-on-the-block.png"],
+  },
 };
 
 const keyFacts = [
@@ -257,7 +271,7 @@ export default function Press() {
               </h2>
               <p className="cta-band__support" style={{ color: "var(--ink-3)" }}>
                 For interview requests, photo access, editorial partnerships, and credential
-                applications — contact press@imsoatl.org or use the form below.
+                applications — contact rachel@tobinink.com or use the form below.
               </p>
             </div>
             <Link href="/contact?type=press" className="btn btn-primary">

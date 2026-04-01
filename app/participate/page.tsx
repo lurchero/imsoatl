@@ -5,6 +5,20 @@ export const metadata: Metadata = {
   title: "Participate — I'M SO ATL",
   description:
     "Artists, vendors, volunteers, press, and partners — find your pathway into I'M SO ATL and Artlanta 2026.",
+  openGraph: {
+    title: "Participate — I'M SO ATL",
+    description: "Artists, vendors, volunteers, press, and partners — find your pathway into Artlanta 2026.",
+    url: "https://imsoatl.org/participate",
+    siteName: "I'M SO ATL",
+    images: [{ url: "https://imsoatl.org/assets/rich_homie_quan.jpg", alt: "Atlanta artist — I'M SO ATL" }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Participate — I'M SO ATL",
+    description: "Artists, vendors, volunteers, press, and partners — find your pathway into Artlanta 2026.",
+    images: ["https://imsoatl.org/assets/rich_homie_quan.jpg"],
+  },
 };
 
 const pathways = [

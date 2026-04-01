@@ -5,6 +5,20 @@ export const metadata: Metadata = {
   title: "Artlanta — I'M SO ATL",
   description:
     "Three days. 50+ structures. Piedmont Park. Artlanta is the flagship festival of I'M SO ATL — free and open to the public, August 7–9, 2026.",
+  openGraph: {
+    title: "Artlanta — I'M SO ATL",
+    description: "Three days. 50+ structures. Piedmont Park. Free and open to the public, August 7–9, 2026.",
+    url: "https://imsoatl.org/festival",
+    siteName: "I'M SO ATL",
+    images: [{ url: "https://imsoatl.org/assets/chillyo/beltline.png", alt: "Atlanta Beltline — Artlanta 2026" }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Artlanta — I'M SO ATL",
+    description: "Three days. 50+ structures. Piedmont Park. Free and open to the public, August 7–9, 2026.",
+    images: ["https://imsoatl.org/assets/chillyo/beltline.png"],
+  },
 };
 
 export default function Festival() {

@@ -5,6 +5,20 @@ export const metadata: Metadata = {
   title: "Visit — I'M SO ATL",
   description:
     "Plan your visit to Artlanta 2026. August 7–9, Piedmont Park, Atlanta. Free and open to the public — no ticket required.",
+  openGraph: {
+    title: "Visit Artlanta 2026 — I'M SO ATL",
+    description: "August 7–9, Piedmont Park, Atlanta. Free and open to the public. MARTA, parking, and accessibility info.",
+    url: "https://imsoatl.org/visit",
+    siteName: "I'M SO ATL",
+    images: [{ url: "https://imsoatl.org/assets/chillyo/indigenous.jpg", alt: "Atlanta — I'M SO ATL" }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Visit Artlanta 2026 — I'M SO ATL",
+    description: "August 7–9, Piedmont Park, Atlanta. Free and open to the public. MARTA, parking, and accessibility info.",
+    images: ["https://imsoatl.org/assets/chillyo/indigenous.jpg"],
+  },
 };
 
 const infoItems = [

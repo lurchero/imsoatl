@@ -380,74 +380,12 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="pathway-row" role="listitem">
-              <span className="pathway-row__num">05</span>
-              <h3 className="pathway-row__title">Press &amp; Media</h3>
-              <p className="pathway-row__desc">
-                Access press resources, media contacts, and official platform updates for journalists
-                and reporters.
-              </p>
-              <div className="pathway-row__right">
-                <span className="tag-blue" style={{ marginBottom: "0.5rem" }}>
-                  Press Kit Available
-                </span>
-                <Link href="/press" className="pathway-row__cta">
-                  Access
-                </Link>
-              </div>
-            </div>
+          </div>
 
-            <div className="pathway-row" role="listitem">
-              <span className="pathway-row__num">06</span>
-              <h3 className="pathway-row__title">Supporters &amp; Patrons</h3>
-              <p className="pathway-row__desc">
-                Support the platform and the artists making Atlanta a city-scale gallery. Patron
-                program coming soon.
-              </p>
-              <div className="pathway-row__right">
-                <span className="tag-blue" style={{ marginBottom: "0.5rem" }}>
-                  Launching Spring 2026
-                </span>
-                <Link href="/contact" className="pathway-row__cta">
-                  Express Interest
-                </Link>
-              </div>
-            </div>
-
-            <div className="pathway-row" role="listitem">
-              <span className="pathway-row__num">07</span>
-              <h3 className="pathway-row__title">Volunteers</h3>
-              <p className="pathway-row__desc">
-                Join the volunteer team supporting Artlanta operations, installations, and public
-                programming across Atlanta.
-              </p>
-              <div className="pathway-row__right">
-                <span className="tag-blue" style={{ marginBottom: "0.5rem" }}>
-                  Sign-Ups Open Summer 2026
-                </span>
-                <Link href="/participate#volunteers" className="pathway-row__cta">
-                  Sign Up
-                </Link>
-              </div>
-            </div>
-
-            <div className="pathway-row" role="listitem">
-              <span className="pathway-row__num">08</span>
-              <h3 className="pathway-row__title">Visitors</h3>
-              <p className="pathway-row__desc">
-                Plan your visit and follow the evolving program as it unfolds across the city. Free,
-                no ticket required.
-              </p>
-              <div className="pathway-row__right">
-                <span className="tag-red" style={{ marginBottom: "0.5rem" }}>
-                  <span className="tag-red__dot" />
-                  Aug 7–9 · Free
-                </span>
-                <Link href="/festival" className="pathway-row__cta">
-                  Plan Your Visit
-                </Link>
-              </div>
-            </div>
+          <div style={{ marginTop: "2.5rem" }}>
+            <Link href="/participate" className="btn-text">
+              View all participation pathways →
+            </Link>
           </div>
 
           <p className="pathways__hint" aria-hidden="true">

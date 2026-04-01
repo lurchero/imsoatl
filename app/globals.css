@@ -635,6 +635,8 @@ input, textarea, select { cursor: text !important; }
 .story-card__date { font-size: 0.6rem; letter-spacing: 0.08em; color: var(--ink-4); }
 .story-card__title { font-size: clamp(1rem,1.4vw,1.25rem); font-weight: 400; color: var(--ink); line-height: 1.2; letter-spacing: -0.01em; transition: color 0.2s; }
 .story-card__title:hover { color: var(--blue); }
+.story-card--coming-soon { opacity: 0.55; pointer-events: none; }
+.story-card--coming-soon .story-card__title { color: var(--ink-3); cursor: default; }
 .story-card__dek { font-size: 0.84rem; color: var(--ink-3); line-height: 1.62; }
 .story-featured { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: clamp(3rem,6vw,7rem); align-items: center; padding-bottom: 3rem; margin-bottom: 3rem; border-bottom: 1px solid var(--rule); }
 .story-featured__img { aspect-ratio: 3/2; overflow: hidden; background: var(--whisper); }

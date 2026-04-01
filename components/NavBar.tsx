@@ -28,7 +28,7 @@ export default function NavBar() {
             <Link href="/about">About</Link>
           </li>
           <li>
-            <Link href="/participate" className="nav__apply">
+            <Link href="/contact?type=artist" className="nav__apply">
               Apply
             </Link>
           </li>
@@ -51,7 +51,7 @@ export default function NavBar() {
         <Link href="/partners">Partners</Link>
         <Link href="/press">Press</Link>
         <Link href="/about">About</Link>
-        <Link href="/participate">Apply</Link>
+        <Link href="/contact?type=artist">Apply</Link>
       </nav>
     </>
   );

@@ -5,6 +5,20 @@ export const metadata: Metadata = {
   title: "About — I'M SO ATL",
   description:
     "I'M SO ATL is a citywide cultural platform organized around exhibition, storytelling, installation, and public experience. Presented by AMAAC Foundation.",
+  openGraph: {
+    title: "About — I'M SO ATL",
+    description: "A citywide cultural platform organized around exhibition, storytelling, installation, and public experience. Presented by AMAAC Foundation.",
+    url: "https://imsoatl.org/about",
+    siteName: "I'M SO ATL",
+    images: [{ url: "https://imsoatl.org/assets/chillyo/lys-ovs.jpg", alt: "Atlanta culture — I'M SO ATL" }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About — I'M SO ATL",
+    description: "A citywide cultural platform organized around exhibition, storytelling, installation, and public experience. Presented by AMAAC Foundation.",
+    images: ["https://imsoatl.org/assets/chillyo/lys-ovs.jpg"],
+  },
 };
 
 const initiatives = [
@@ -184,50 +198,6 @@ export default function About() {
                 <Link href={item.link.href} className="expr-row__cta">
                   {item.link.text}
                 </Link>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── LEADERSHIP ── */}
-      <section className="section section--alt" style={{ borderBottom: "1px solid var(--rule)" }}>
-        <div className="container">
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-              gap: "3rem",
-              alignItems: "end",
-              paddingBottom: "3rem",
-              borderBottom: "1px solid var(--rule)",
-              marginBottom: "3rem",
-            }}
-          >
-            <div className="reveal">
-              <p className="t-label" style={{ marginBottom: "0.9rem" }}>
-                Leadership
-              </p>
-              <h2 className="t-h2">The team behind the platform.</h2>
-            </div>
-            <p className="t-body--sm reveal reveal-delay-2" style={{ alignSelf: "end" }}>
-              Leadership profiles and organizational bios will be published ahead of Artlanta 2026.
-            </p>
-          </div>
-
-          <div className="team-grid reveal">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="team-card">
-                <div className="team-card__img">
-                  {/* DROP IMAGE: /public/assets/about/portrait-{i}.jpg (4:5 — professional portrait) */}
-                  <div className="img-placeholder">
-                    <span>Portrait {i} · 4:5</span>
-                  </div>
-                </div>
-                <div>
-                  <p className="team-card__name">Name TBA</p>
-                  <p className="team-card__role">Title TBA</p>
-                </div>
               </div>
             ))}
           </div>

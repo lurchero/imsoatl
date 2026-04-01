@@ -5,6 +5,20 @@ export const metadata: Metadata = {
   title: "Stories — I'M SO ATL",
   description:
     "Essays, features, and cultural context from the I'M SO ATL platform. The Classic Atlanta Project — a living archive of the people and places that define the city.",
+  openGraph: {
+    title: "Stories — I'M SO ATL",
+    description: "Essays, features, and cultural context. The Classic Atlanta Project — a living archive of the people and places that define the city.",
+    url: "https://imsoatl.org/stories",
+    siteName: "I'M SO ATL",
+    images: [{ url: "https://imsoatl.org/assets/chillyo/portrait.png", alt: "Classic Atlanta Project — Omar Chilly-O Mitchell" }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Stories — I'M SO ATL",
+    description: "Essays, features, and cultural context. The Classic Atlanta Project — a living archive of the people and places that define the city.",
+    images: ["https://imsoatl.org/assets/chillyo/portrait.png"],
+  },
 };
 
 // Story data — replace with Sanity CMS queries when connected
@@ -226,12 +240,16 @@ export default function Stories() {
           </div>
           <div className="story-grid">
             {stories.map((story, i) => (
-              <div key={story.title} className={`story-card reveal${i > 0 ? ` reveal-delay-${Math.min(i, 4)}` : ""}`}>
+              <div key={story.title} className={`story-card reveal${i > 0 ? ` reveal-delay-${Math.min(i, 4)}` : ""}${story.href === "#" ? " story-card--coming-soon" : ""}`}>
                 <div className="story-card__meta">
                   <span className="story-card__cat">{story.category}</span>
                   <span className="story-card__date">{story.date}</span>
                 </div>
-                <Link href={story.href} className="story-card__title">{story.title}</Link>
+                {story.href === "#" ? (
+                  <span className="story-card__title">{story.title}</span>
+                ) : (
+                  <Link href={story.href} className="story-card__title">{story.title}</Link>
+                )}
                 <p className="story-card__dek">{story.dek}</p>
               </div>
             ))}

@@ -4,6 +4,20 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Contact — I'M SO ATL",
   description: "Get in touch with I'M SO ATL. General inquiries, press, partnership, artist applications, and vendor questions.",
+  openGraph: {
+    title: "Contact — I'M SO ATL",
+    description: "Get in touch with I'M SO ATL — general inquiries, press, partnership, and artist applications.",
+    url: "https://imsoatl.org/contact",
+    siteName: "I'M SO ATL",
+    images: [{ url: "https://imsoatl.org/assets/rich_homie_quan.jpg", alt: "I'M SO ATL — Contact" }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact — I'M SO ATL",
+    description: "Get in touch with I'M SO ATL — general inquiries, press, partnership, and artist applications.",
+    images: ["https://imsoatl.org/assets/rich_homie_quan.jpg"],
+  },
 };
 
 export default function Contact() {

@@ -5,6 +5,20 @@ export const metadata: Metadata = {
   title: "Partners — I'M SO ATL",
   description:
     "Partnership and sponsorship opportunities with I'M SO ATL and Artlanta 2026 — a citywide cultural platform with international relevance.",
+  openGraph: {
+    title: "Partners — I'M SO ATL",
+    description: "Partnership and sponsorship opportunities with Artlanta 2026 — a citywide cultural platform with international relevance.",
+    url: "https://imsoatl.org/partners",
+    siteName: "I'M SO ATL",
+    images: [{ url: "https://imsoatl.org/assets/chillyo/we-up-future.jpg", alt: "Atlanta culture — I'M SO ATL" }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Partners — I'M SO ATL",
+    description: "Partnership and sponsorship opportunities with Artlanta 2026 — a citywide cultural platform with international relevance.",
+    images: ["https://imsoatl.org/assets/chillyo/we-up-future.jpg"],
+  },
 };
 
 const tiers = [
@@ -158,7 +172,7 @@ export default function Partners() {
       </div>
 
       {/* ── PARTNERSHIP TIERS ── */}
-      <section className="section" style={{ borderBottom: "1px solid var(--rule)" }}>
+      <section id="sponsorship" className="section" style={{ borderBottom: "1px solid var(--rule)" }}>
         <div className="container">
           <div
             style={{
