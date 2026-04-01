@@ -127,10 +127,8 @@ export default function About() {
             }}
           >
             <div className="img-wrap r-3-2 reveal">
-              {/* DROP IMAGE: /public/assets/about/mission.jpg (3:2 — Atlanta cultural / documentary image) */}
-              <div className="img-placeholder">
-                <span>Mission Image · 3:2</span>
-              </div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/assets/chillyo/lys-ovs.jpg" alt="Atlanta — Omar Chilly-O Mitchell" loading="lazy" />
             </div>
             <div className="reveal reveal-delay-2">
               <p className="t-label" style={{ marginBottom: "1.4rem" }}>

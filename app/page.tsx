@@ -102,37 +102,8 @@ export default function Home() {
         <div className="container">
           <div className="platform-intro__grid">
             <div className="platform-intro__img reveal">
-              {/* MISSING ASSET: b_money.jpg — architectural, cinematic, Atlanta public space (4:5 ratio) */}
-              <div
-                style={{
-                  width: "100%",
-                  paddingBottom: "125%",
-                  background: "var(--whisper)",
-                  position: "relative",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <p
-                  style={{
-                    position: "absolute",
-                    top: "50%",
-                    left: "50%",
-                    transform: "translate(-50%, -50%)",
-                    fontSize: "0.7rem",
-                    color: "var(--ink-4)",
-                    letterSpacing: "0.12em",
-                    textTransform: "uppercase",
-                    textAlign: "center",
-                    lineHeight: 1.8,
-                  }}
-                >
-                  Image
-                  <br />
-                  Coming Soon
-                </p>
-              </div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/assets/b_money.jpg" alt="Atlanta — Omar Chilly-O Mitchell" loading="lazy" />
             </div>
             <div className="platform-intro__right">
               <p className="t-label t-label--blue reveal">The Platform</p>
@@ -362,7 +333,7 @@ export default function Home() {
               <div className="featured-art__slot-img img-wrap r-3-2">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/assets/chillyo/todays-muse.png"
+                  src="/assets/chillyo/todays-muse.jpg"
                   alt="Today's Muse Project — Omar Chilly-O Mitchell"
                   loading="lazy"
                 />
@@ -653,7 +624,7 @@ export default function Home() {
           <div className="credibility__header">
             <div className="reveal">
               <p className="t-label" style={{ marginBottom: "0.9rem" }}>
-                Institutional Support
+                Partners
               </p>
               <h2 className="t-h2">
                 Institutional Support
@@ -729,7 +700,7 @@ export default function Home() {
               </div>
             </div>
             <div className="partner-cat">
-              <span className="partner-cat__label">Community</span>
+              <span className="partner-cat__label">Agency &amp; Technology</span>
               <div className="partner-cat__logos">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img

@@ -50,11 +50,8 @@ export default function Visit() {
 
       {/* ── VENUE IMAGE ── */}
       <div className="img-wrap r-21-9" style={{ borderBottom: "1px solid var(--rule)" }}>
-        {/* DROP IMAGE: /public/assets/festival/hero.jpg or a dedicated venue shot */}
-        {/* Use same /public/assets/festival/ folder — no separate folder needed for visit page */}
-        <div className="img-placeholder">
-          <span>Piedmont Park · Venue · 21:9</span>
-        </div>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/assets/chillyo/indigenous.jpg" alt="Atlanta — Omar Chilly-O Mitchell" loading="lazy" />
       </div>
 
       {/* ── VISIT INFO ── */}

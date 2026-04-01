@@ -92,10 +92,8 @@ export default function Stories() {
           </p>
           <div className="story-featured">
             <div className="story-featured__img reveal">
-              {/* DROP IMAGE: /public/assets/stories/featured.jpg (3:2 — editorial feature image) */}
-              <div className="img-placeholder">
-                <span>Featured Story · 3:2</span>
-              </div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/assets/chillyo/portrait.png" alt="Omar Chilly-O Mitchell — Classic Atlanta Project" loading="lazy" />
             </div>
             <div className="story-featured__body reveal reveal-delay-2">
               <div className="story-featured__eyebrow">
@@ -199,14 +197,19 @@ export default function Stories() {
                 className={`story-card reveal${i > 0 ? ` reveal-delay-${Math.min(i, 4)}` : ""}`}
               >
                 <div className="story-card__img">
-                  {/* DROP IMAGE: /public/assets/stories/story-{i+1}.jpg (3:2) */}
-                  <div className="img-placeholder">
-                    <span>
-                      Story {i + 1}
-                      <br />
-                      3:2
-                    </span>
-                  </div>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={[
+                      "/assets/chillyo/kings-on-the-block.png",
+                      "/assets/chillyo/we-up-future.jpg",
+                      "/assets/chillyo/inner-child.jpg",
+                      "/assets/chillyo/life-is-art.jpg",
+                      "/assets/chillyo/uhltra.jpg",
+                      "/assets/chillyo/knows-jones.jpg",
+                    ][i]}
+                    alt={`Story — Omar Chilly-O Mitchell`}
+                    loading="lazy"
+                  />
                 </div>
                 <div className="story-card__meta">
                   <span className="story-card__cat">{story.category}</span>

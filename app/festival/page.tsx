@@ -36,10 +36,8 @@ export default function Festival() {
       {/* ── HERO IMAGE ── */}
       {/* ASSET FOLDER: /public/assets/festival/ */}
       <div className="img-wrap r-21-9" style={{ borderBottom: "1px solid var(--rule)" }}>
-        {/* DROP IMAGE: /public/assets/festival/hero.jpg (21:9 wide panoramic — festival grounds or Piedmont Park) */}
-        <div className="img-placeholder">
-          <span>Festival Hero · Piedmont Park · 21:9</span>
-        </div>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/assets/chillyo/im-so-atl.jpg" alt="I'M SO ATL — Omar Chilly-O Mitchell" loading="lazy" />
       </div>
 
       {/* ── FESTIVAL FACTS ── */}
@@ -140,10 +138,8 @@ export default function Festival() {
           <div className="program-grid reveal">
             <div className="program-item">
               <div className="program-item__img">
-                {/* DROP IMAGE: /public/assets/festival/program-exhibition.jpg (3:2) */}
-                <div className="img-placeholder">
-                  <span>Exhibition Environment</span>
-                </div>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/assets/chillyo/wheel-of-fortune.jpg" alt="Exhibition — Omar Chilly-O Mitchell" loading="lazy" />
               </div>
               <span className="program-item__num">01</span>
               <h3 className="program-item__title">Exhibition</h3>
@@ -156,10 +152,8 @@ export default function Festival() {
 
             <div className="program-item">
               <div className="program-item__img">
-                {/* DROP IMAGE: /public/assets/festival/program-market.jpg (3:2) */}
-                <div className="img-placeholder">
-                  <span>Visual Art Market</span>
-                </div>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/assets/chillyo/love-me-hoodie.jpg" alt="Visual Art Market — Omar Chilly-O Mitchell" loading="lazy" />
               </div>
               <span className="program-item__num">02</span>
               <h3 className="program-item__title">Visual Art Market</h3>
@@ -172,10 +166,8 @@ export default function Festival() {
 
             <div className="program-item">
               <div className="program-item__img">
-                {/* DROP IMAGE: /public/assets/festival/program-performance.jpg (3:2) */}
-                <div className="img-placeholder">
-                  <span>Performance &amp; Music</span>
-                </div>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/assets/chillyo/skate-bmx.jpg" alt="Performance — Omar Chilly-O Mitchell" loading="lazy" />
               </div>
               <span className="program-item__num">03</span>
               <h3 className="program-item__title">Performance &amp; Music</h3>
@@ -188,10 +180,8 @@ export default function Festival() {
 
             <div className="program-item">
               <div className="program-item__img">
-                {/* DROP IMAGE: /public/assets/festival/program-citywide.jpg (3:2) */}
-                <div className="img-placeholder">
-                  <span>Citywide Installations</span>
-                </div>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/assets/chillyo/beltline.png" alt="Citywide Installations — Omar Chilly-O Mitchell" loading="lazy" />
               </div>
               <span className="program-item__num">04</span>
               <h3 className="program-item__title">Citywide Installations</h3>
@@ -217,10 +207,8 @@ export default function Festival() {
             }}
           >
             <div className="img-wrap r-3-2 reveal">
-              {/* DROP IMAGE: /public/assets/festival/venue.jpg (3:2 — Piedmont Park aerial or ground-level) */}
-              <div className="img-placeholder">
-                <span>Piedmont Park · Venue · 3:2</span>
-              </div>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/assets/chillyo/gulch-75.png" alt="Atlanta — Omar Chilly-O Mitchell" loading="lazy" />
             </div>
             <div className="reveal reveal-delay-2">
               <p className="t-label" style={{ marginBottom: "1.4rem" }}>
