@@ -61,8 +61,8 @@ const currentPartners = [
   { name: "Bonfire", category: "Production", logo: "/assets/logos/bonfire.webp", height: 34 },
   { name: "The Hype Magazine", category: "Media", logo: "/assets/logos/hype.webp", height: 26 },
   { name: "ExpATL", category: "Media", logo: "/assets/logos/expatl.webp", height: 20 },
-  { name: "Tobin Ink PR", category: "Community", logo: "/assets/logos/tobin.webp", height: 24 },
-  { name: "Rebelity Software", category: "Community", logo: "/assets/logos/rebelity.webp", height: 24 },
+  { name: "Tobin Ink PR", category: "Agency & Technology", logo: "/assets/logos/tobin.webp", height: 24 },
+  { name: "Rebelity Software", category: "Agency & Technology", logo: "/assets/logos/rebelity.webp", height: 24 },
 ];
 
 export default function Partners() {
@@ -257,7 +257,7 @@ export default function Partners() {
           </div>
 
           <div className="partner-categories reveal">
-            {["Presenting", "Production", "Media", "Community"].map((cat) => (
+            {["Presenting", "Production", "Media", "Agency & Technology"].map((cat) => (
               <div key={cat} className="partner-cat">
                 <span className="partner-cat__label">{cat}</span>
                 <div className="partner-cat__logos">

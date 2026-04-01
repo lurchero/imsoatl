@@ -151,20 +151,21 @@ export default function Stories() {
                 Explore the Project
               </Link>
             </div>
-            <div className="img-wrap r-3-2 reveal">
+            <div className="reveal" style={{ overflow: "hidden" }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/assets/rich_homie_quan.jpg"
                 alt="Rich Homie Quan — Atlanta artist portrait. Classic Atlanta Project."
                 loading="lazy"
+                style={{ width: "100%", height: "auto", display: "block" }}
               />
             </div>
           </div>
         </div>
       </section>
 
-      {/* ── STORY GRID ── */}
-      <section className="section" style={{ borderBottom: "1px solid var(--rule)" }}>
+      {/* ── CHILLY-O GALLERY ── */}
+      <section className="section section--alt" style={{ borderBottom: "1px solid var(--rule)" }}>
         <div className="container">
           <div
             style={{
@@ -173,51 +174,64 @@ export default function Stories() {
               alignItems: "flex-end",
               paddingBottom: "2.5rem",
               borderBottom: "1px solid var(--rule)",
-              marginBottom: "2.5rem",
+              marginBottom: "3rem",
             }}
           >
             <div className="reveal">
-              <p className="t-label" style={{ marginBottom: "0.9rem" }}>
-                All Stories
-              </p>
-              <h2 className="t-h2">From the archive.</h2>
+              <p className="t-label" style={{ marginBottom: "0.9rem" }}>Photography</p>
+              <h2 className="t-h2">Omar &ldquo;Chilly-O&rdquo; Mitchell</h2>
             </div>
-            <span
-              className="reveal reveal-delay-2"
-              style={{ fontSize: "0.72rem", color: "var(--ink-4)", letterSpacing: "0.06em" }}
-            >
-              Publishing 2026
+            <span className="reveal reveal-delay-2" style={{ fontSize: "0.72rem", color: "var(--ink-4)", letterSpacing: "0.06em" }}>
+              Atlanta, Georgia
             </span>
           </div>
 
+          <div className="chillyo-gallery reveal">
+            {[
+              { src: "/assets/chillyo/kings-on-the-block.png", title: "Kings on the Block" },
+              { src: "/assets/chillyo/portrait.png", title: "Portrait" },
+              { src: "/assets/chillyo/life-is-art.jpg", title: "Life is Art" },
+              { src: "/assets/chillyo/we-up-future.jpg", title: "We Up Future" },
+              { src: "/assets/chillyo/inner-child.jpg", title: "Inner Child" },
+              { src: "/assets/chillyo/love-me-hoodie.jpg", title: "Love Me Hoodie" },
+              { src: "/assets/chillyo/wheel-of-fortune.jpg", title: "Wheel of Fortune" },
+              { src: "/assets/chillyo/gulch-75.png", title: "Gulch 75" },
+              { src: "/assets/chillyo/lys-ovs.jpg", title: "LYS OVS" },
+              { src: "/assets/chillyo/uhltra.jpg", title: "Uhltra" },
+              { src: "/assets/chillyo/im-so-atl.jpg", title: "I\u2019m So ATL" },
+              { src: "/assets/chillyo/knows-jones.jpg", title: "Knows Jones" },
+              { src: "/assets/chillyo/todays-muse.jpg", title: "Today\u2019s Muse Project" },
+              { src: "/assets/chillyo/skate-bmx.jpg", title: "Skate BMX" },
+              { src: "/assets/chillyo/indigenous.jpg", title: "Indigenous" },
+              { src: "/assets/chillyo/beltline.png", title: "Atlanta Beltline" },
+            ].map((item) => (
+              <div key={item.title} className="chillyo-gallery__item">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={item.src} alt={`${item.title} — Omar Chilly-O Mitchell`} loading="lazy" />
+                <div className="chillyo-gallery__caption">
+                  <span>{item.title}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── STORIES COMING ── */}
+      <section className="section" style={{ borderBottom: "1px solid var(--rule)" }}>
+        <div className="container">
+          <div className="reveal" style={{ marginBottom: "2.5rem" }}>
+            <p className="t-label" style={{ marginBottom: "0.9rem" }}>All Stories</p>
+            <h2 className="t-h2">From the archive.</h2>
+          </div>
           <div className="story-grid">
             {stories.map((story, i) => (
-              <div
-                key={story.title}
-                className={`story-card reveal${i > 0 ? ` reveal-delay-${Math.min(i, 4)}` : ""}`}
-              >
-                <div className="story-card__img">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={[
-                      "/assets/chillyo/kings-on-the-block.png",
-                      "/assets/chillyo/we-up-future.jpg",
-                      "/assets/chillyo/inner-child.jpg",
-                      "/assets/chillyo/life-is-art.jpg",
-                      "/assets/chillyo/uhltra.jpg",
-                      "/assets/chillyo/knows-jones.jpg",
-                    ][i]}
-                    alt={`Story — Omar Chilly-O Mitchell`}
-                    loading="lazy"
-                  />
-                </div>
+              <div key={story.title} className={`story-card reveal${i > 0 ? ` reveal-delay-${Math.min(i, 4)}` : ""}`}>
                 <div className="story-card__meta">
                   <span className="story-card__cat">{story.category}</span>
                   <span className="story-card__date">{story.date}</span>
                 </div>
-                <Link href={story.href} className="story-card__title">
-                  {story.title}
-                </Link>
+                <Link href={story.href} className="story-card__title">{story.title}</Link>
                 <p className="story-card__dek">{story.dek}</p>
               </div>
             ))}
