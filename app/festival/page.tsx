@@ -10,14 +10,14 @@ export const metadata: Metadata = {
     description: "Three days. 50+ structures. Piedmont Park. Free and open to the public, August 7–9, 2026.",
     url: "https://imsoatl.org/festival",
     siteName: "I'M SO ATL",
-    images: [{ url: "https://imsoatl.org/assets/chillyo/beltline.jpg", alt: "Atlanta Beltline — Artlanta 2026" }],
+    images: [{ url: "https://imsoatl.org/assets/chillyo/piedmont-park.jpg", alt: "Piedmont Park, Atlanta — Artlanta 2026" }],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Artlanta — I'M SO ATL",
     description: "Three days. 50+ structures. Piedmont Park. Free and open to the public, August 7–9, 2026.",
-    images: ["https://imsoatl.org/assets/chillyo/beltline.jpg"],
+    images: ["https://imsoatl.org/assets/chillyo/piedmont-park.jpg"],
   },
 };
 
@@ -195,7 +195,7 @@ export default function Festival() {
             <div className="program-item">
               <div className="program-item__img">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/assets/chillyo/beltline.jpg" alt="Citywide Installations — Omar Chilly-O Mitchell" loading="lazy" />
+                <img src="/assets/chillyo/citywide-installations.jpg" alt="Citywide Installations — Omar Chilly-O Mitchell" loading="lazy" />
               </div>
               <span className="program-item__num">04</span>
               <h3 className="program-item__title">Citywide Installations</h3>
@@ -222,7 +222,7 @@ export default function Festival() {
           >
             <div className="img-wrap r-3-2 reveal">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/assets/chillyo/gulch-75.jpg" alt="Atlanta — Omar Chilly-O Mitchell" loading="lazy" />
+              <img src="/assets/chillyo/piedmont-park.jpg" alt="Piedmont Park, Lake Clara Meer — Atlanta" loading="lazy" />
             </div>
             <div className="reveal reveal-delay-2">
               <p className="t-label" style={{ marginBottom: "1.4rem" }}>

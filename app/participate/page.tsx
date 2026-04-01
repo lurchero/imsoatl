@@ -194,6 +194,15 @@ export default function Participate() {
         <span className="tag-blue">Volunteers — Opening Summer 2026</span>
       </div>
 
+      {/* ── ATMOSPHERE IMAGE ── */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/assets/chillyo/installation-park.jpg"
+        alt="Art installation at Artlanta festival — I'M SO ATL"
+        loading="lazy"
+        style={{ width: "100%", display: "block", maxHeight: "520px", objectFit: "cover" }}
+      />
+
       {/* ── PATHWAY LIST ── */}
       <section className="pathways section">
         <div className="container">

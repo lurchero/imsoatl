@@ -138,8 +138,8 @@ export default function Home() {
           <div className="artlanta-feature__visual">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/assets/chillyo/im-so-atl.jpg"
-              alt="Atlanta public space — I'M SO ATL"
+              src="/assets/chillyo/artlanta-piedmont.jpg"
+              alt="Artlanta at Piedmont Park — I'M SO ATL"
               loading="lazy"
             />
           </div>

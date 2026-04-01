@@ -171,6 +171,15 @@ export default function Partners() {
         </div>
       </div>
 
+      {/* ── ATMOSPHERE IMAGE ── */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/assets/chillyo/artlanta-galleries.jpg"
+        alt="Artlanta gallery experience — I'M SO ATL"
+        loading="lazy"
+        style={{ width: "100%", display: "block", maxHeight: "520px", objectFit: "cover" }}
+      />
+
       {/* ── PARTNERSHIP TIERS ── */}
       <section id="sponsorship" className="section" style={{ borderBottom: "1px solid var(--rule)" }}>
         <div className="container">
