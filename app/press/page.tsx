@@ -10,14 +10,14 @@ export const metadata: Metadata = {
     description: "Press resources, media contacts, and official boilerplate for I'M SO ATL and Artlanta 2026.",
     url: "https://imsoatl.org/press",
     siteName: "I'M SO ATL",
-    images: [{ url: "https://imsoatl.org/assets/chillyo/kings-on-the-block.png", alt: "Atlanta culture — I'M SO ATL" }],
+    images: [{ url: "https://imsoatl.org/assets/chillyo/kings-on-the-block.jpg", alt: "Atlanta culture — I'M SO ATL" }],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Press — I'M SO ATL",
     description: "Press resources, media contacts, and official boilerplate for I'M SO ATL and Artlanta 2026.",
-    images: ["https://imsoatl.org/assets/chillyo/kings-on-the-block.png"],
+    images: ["https://imsoatl.org/assets/chillyo/kings-on-the-block.jpg"],
   },
 };
 
@@ -62,6 +62,17 @@ export default function Press() {
           </div>
         </div>
       </header>
+
+      {/* ── PRESS HERO IMAGE ── */}
+      <section style={{ borderBottom: "1px solid var(--rule)", overflow: "hidden" }}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/assets/chillyo/kings-on-the-block.jpg"
+          alt="Kings on the Block — Omar Chilly-O Mitchell. Classic Atlanta Project."
+          loading="lazy"
+          style={{ width: "100%", height: "auto", display: "block" }}
+        />
+      </section>
 
       {/* ── OFFICIAL BOILERPLATE ── */}
       <section className="section section--alt" style={{ borderBottom: "1px solid var(--rule)" }}>

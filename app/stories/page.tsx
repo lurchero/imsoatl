@@ -10,14 +10,14 @@ export const metadata: Metadata = {
     description: "Essays, features, and cultural context. The Classic Atlanta Project — a living archive of the people and places that define the city.",
     url: "https://imsoatl.org/stories",
     siteName: "I'M SO ATL",
-    images: [{ url: "https://imsoatl.org/assets/chillyo/portrait.png", alt: "Classic Atlanta Project — Omar Chilly-O Mitchell" }],
+    images: [{ url: "https://imsoatl.org/assets/chillyo/portrait.jpg", alt: "Classic Atlanta Project — Omar Chilly-O Mitchell" }],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Stories — I'M SO ATL",
     description: "Essays, features, and cultural context. The Classic Atlanta Project — a living archive of the people and places that define the city.",
-    images: ["https://imsoatl.org/assets/chillyo/portrait.png"],
+    images: ["https://imsoatl.org/assets/chillyo/portrait.jpg"],
   },
 };
 
@@ -107,7 +107,7 @@ export default function Stories() {
           <div className="story-featured">
             <div className="story-featured__img reveal">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/assets/chillyo/portrait.png" alt="Omar Chilly-O Mitchell — Classic Atlanta Project" loading="lazy" />
+              <img src="/assets/chillyo/portrait.jpg" alt="Omar Chilly-O Mitchell — Classic Atlanta Project" loading="lazy" />
             </div>
             <div className="story-featured__body reveal reveal-delay-2">
               <div className="story-featured__eyebrow">
@@ -202,14 +202,14 @@ export default function Stories() {
 
           <div className="chillyo-gallery reveal">
             {[
-              { src: "/assets/chillyo/kings-on-the-block.png", title: "Kings on the Block" },
-              { src: "/assets/chillyo/portrait.png", title: "Portrait" },
+              { src: "/assets/chillyo/kings-on-the-block.jpg", title: "Kings on the Block" },
+              { src: "/assets/chillyo/portrait.jpg", title: "Portrait" },
               { src: "/assets/chillyo/life-is-art.jpg", title: "Life is Art" },
               { src: "/assets/chillyo/we-up-future.jpg", title: "We Up Future" },
               { src: "/assets/chillyo/inner-child.jpg", title: "Inner Child" },
               { src: "/assets/chillyo/love-me-hoodie.jpg", title: "Love Me Hoodie" },
               { src: "/assets/chillyo/wheel-of-fortune.jpg", title: "Wheel of Fortune" },
-              { src: "/assets/chillyo/gulch-75.png", title: "Gulch 75" },
+              { src: "/assets/chillyo/gulch-75.jpg", title: "Gulch 75" },
               { src: "/assets/chillyo/lys-ovs.jpg", title: "LYS OVS" },
               { src: "/assets/chillyo/uhltra.jpg", title: "Uhltra" },
               { src: "/assets/chillyo/im-so-atl.jpg", title: "I\u2019m So ATL" },
@@ -217,7 +217,7 @@ export default function Stories() {
               { src: "/assets/chillyo/todays-muse.jpg", title: "Today\u2019s Muse Project" },
               { src: "/assets/chillyo/skate-bmx.jpg", title: "Skate BMX" },
               { src: "/assets/chillyo/indigenous.jpg", title: "Indigenous" },
-              { src: "/assets/chillyo/beltline.png", title: "Atlanta Beltline" },
+              { src: "/assets/chillyo/beltline.jpg", title: "Atlanta Beltline" },
             ].map((item) => (
               <div key={item.title} className="chillyo-gallery__item">
                 {/* eslint-disable-next-line @next/next/no-img-element */}

@@ -116,13 +116,8 @@ input:focus-visible, textarea:focus-visible, select:focus-visible {
 }
 input, textarea, select { cursor: text !important; }
 
-/* ── PAGE OVERLAY ── */
-.page-overlay {
-  position: fixed; inset: 0; background: var(--white);
-  z-index: 99990; pointer-events: none;
-  opacity: 0; transition: opacity 0.35s var(--ease);
-}
-.page-overlay.active { opacity: 1; pointer-events: all; }
+/* ── PAGE OVERLAY — hidden, kept for structural reference ── */
+.page-overlay { display: none; }
 
 /* ── NAVIGATION ── */
 .nav {
@@ -245,11 +240,12 @@ input, textarea, select { cursor: text !important; }
 /* ── PARTNER LOGOS ── */
 .partner-logo-img {
   max-height: 44px; width: auto; height: auto; max-width: 160px;
-  opacity: 0.75;
+  opacity: 0.8;
+  mix-blend-mode: multiply;
   transition: opacity 0.25s;
   display: block;
 }
-.partner-logo-img:hover { opacity: 0.85; }
+.partner-logo-img:hover { opacity: 1; }
 
 /* ── FOOTER ── */
 .footer { background: var(--ink); color: var(--white); padding: clamp(4rem, 8vw, 7rem) 0 0; }

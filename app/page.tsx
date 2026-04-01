@@ -134,7 +134,15 @@ export default function Home() {
           S4 — ARTLANTA FEATURE
       ══════════════════════════════════════════ */}
       <section className="artlanta-feature">
-        <div className="artlanta-feature__inner artlanta-feature__inner--no-img">
+        <div className="artlanta-feature__inner">
+          <div className="artlanta-feature__visual">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/assets/chillyo/im-so-atl.jpg"
+              alt="Atlanta public space — I'M SO ATL"
+              loading="lazy"
+            />
+          </div>
           <div className="artlanta-feature__content">
             <p className="artlanta-feature__label reveal">Featured Festival</p>
             <h2 className="artlanta-feature__name reveal reveal-delay-1">Artlanta</h2>

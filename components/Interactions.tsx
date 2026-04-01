@@ -1,8 +1,12 @@
 "use client";
 
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Interactions() {
+  const pathname = usePathname();
+
+  /* ── ONE-TIME SETUP — cursor, scroll, nav, forms ── */
   useEffect(() => {
     const isReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const isPointerFine = window.matchMedia("(pointer: fine)").matches;
@@ -110,38 +114,6 @@ export default function Interactions() {
       if (window.innerWidth > 768 && mobileNav && mobileNav.classList.contains("open")) closeNav();
     };
     window.addEventListener("resize", handleResize);
-
-    /* ── REVEALS ── */
-    if (!isReducedMotion) {
-      const obs = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((e) => {
-            if (e.isIntersecting) {
-              e.target.classList.add("visible");
-              obs.unobserve(e.target);
-            }
-          });
-        },
-        { threshold: 0.07, rootMargin: "0px 0px -32px 0px" }
-      );
-      document.querySelectorAll(".reveal").forEach((el) => obs.observe(el));
-    } else {
-      document.querySelectorAll(".reveal").forEach((el) => el.classList.add("visible"));
-    }
-
-    /* ── ACTIVE NAV ── */
-    const path = window.location.pathname;
-    document.querySelectorAll(".nav__links a, .nav__mobile a").forEach((a) => {
-      const href = (a as HTMLAnchorElement).getAttribute("href");
-      if (!href) return;
-      const clean = href.replace(/^\//, "");
-      if (
-        (clean === "" && path === "/") ||
-        (clean !== "" && (path === `/${clean}` || path.startsWith(`/${clean}/`)))
-      ) {
-        a.classList.add("active");
-      }
-    });
 
     /* ── FORMS — Netlify submission ── */
     function handleForm(
@@ -251,6 +223,50 @@ export default function Interactions() {
       document.removeEventListener("keydown", handleKeydown);
     };
   }, []);
+
+  /* ── PER-PAGE EFFECTS — re-run on every navigation ── */
+  useEffect(() => {
+    const isReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    /* Scroll back to top on navigation */
+    window.scrollTo(0, 0);
+
+    /* ── REVEALS ── */
+    if (!isReducedMotion) {
+      const obs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("visible");
+              obs.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.07, rootMargin: "0px 0px -32px 0px" }
+      );
+      document.querySelectorAll(".reveal:not(.visible)").forEach((el) => obs.observe(el));
+      return () => obs.disconnect();
+    } else {
+      document.querySelectorAll(".reveal").forEach((el) => el.classList.add("visible"));
+    }
+  }, [pathname]);
+
+  /* ── ACTIVE NAV — update on every navigation ── */
+  useEffect(() => {
+    const path = window.location.pathname;
+    document.querySelectorAll(".nav__links a, .nav__mobile a").forEach((a) => {
+      a.classList.remove("active");
+      const href = (a as HTMLAnchorElement).getAttribute("href");
+      if (!href) return;
+      const clean = href.replace(/^\//, "");
+      if (
+        (clean === "" && path === "/") ||
+        (clean !== "" && (path === `/${clean}` || path.startsWith(`/${clean}/`)))
+      ) {
+        a.classList.add("active");
+      }
+    });
+  }, [pathname]);
 
   return null;
 }
