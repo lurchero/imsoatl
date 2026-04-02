@@ -102,14 +102,21 @@ export default function Home() {
         <div className="container">
           <div className="platform-intro__grid">
             <div className="platform-intro__img reveal">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/assets/b_money.jpg"
-                srcSet="/assets/b_money-400.jpg 400w, /assets/b_money-800.jpg 800w, /assets/b_money-1200.jpg 1200w"
-                sizes="(max-width: 768px) 100vw, 50vw"
-                alt="Atlanta — Omar Chilly-O Mitchell"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet="/assets/b_money-400.webp 400w, /assets/b_money-800.webp 800w, /assets/b_money-1200.webp 1200w"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/assets/b_money.jpg"
+                  srcSet="/assets/b_money-400.jpg 400w, /assets/b_money-800.jpg 800w, /assets/b_money-1200.jpg 1200w"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  alt="Atlanta — Omar Chilly-O Mitchell"
+                  loading="lazy"
+                />
+              </picture>
             </div>
             <div className="platform-intro__right">
               <p className="t-label t-label--blue reveal">The Platform</p>
@@ -142,14 +149,21 @@ export default function Home() {
       <section className="artlanta-feature">
         <div className="artlanta-feature__inner">
           <div className="artlanta-feature__visual">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/assets/chillyo/artlanta-piedmont.jpg"
-              srcSet="/assets/chillyo/artlanta-piedmont-400.jpg 400w, /assets/chillyo/artlanta-piedmont-800.jpg 800w, /assets/chillyo/artlanta-piedmont-1200.jpg 1200w"
-              sizes="(max-width: 768px) 100vw, 50vw"
-              alt="Artlanta at Piedmont Park — I'M SO ATL"
-              loading="lazy"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                srcSet="/assets/chillyo/artlanta-piedmont-400.webp 400w, /assets/chillyo/artlanta-piedmont-800.webp 800w, /assets/chillyo/artlanta-piedmont-1200.webp 1200w"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/assets/chillyo/artlanta-piedmont.jpg"
+                srcSet="/assets/chillyo/artlanta-piedmont-400.jpg 400w, /assets/chillyo/artlanta-piedmont-800.jpg 800w, /assets/chillyo/artlanta-piedmont-1200.jpg 1200w"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                alt="Artlanta at Piedmont Park — I'M SO ATL"
+                loading="lazy"
+              />
+            </picture>
           </div>
           <div className="artlanta-feature__content">
             <p className="artlanta-feature__label reveal">Featured Festival</p>
@@ -189,14 +203,21 @@ export default function Home() {
           {/* ── FEATURED ARTIST: Omar "Chilly-O" Mitchell ── */}
           <div className="featured-art__primary reveal">
             <div className="featured-art__img">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/assets/rich_homie_quan.jpg"
-                srcSet="/assets/rich_homie_quan-400.jpg 400w, /assets/rich_homie_quan-800.jpg 800w, /assets/rich_homie_quan-1200.jpg 1200w"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
-                alt="Rich Homie Quan — photographed by Omar Chilly-O Mitchell. Classic Atlanta Project."
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet="/assets/rich_homie_quan-400.webp 400w, /assets/rich_homie_quan-800.webp 800w, /assets/rich_homie_quan-1200.webp 1200w"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/assets/rich_homie_quan.jpg"
+                  srcSet="/assets/rich_homie_quan-400.jpg 400w, /assets/rich_homie_quan-800.jpg 800w, /assets/rich_homie_quan-1200.jpg 1200w"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                  alt="Rich Homie Quan — photographed by Omar Chilly-O Mitchell. Classic Atlanta Project."
+                  loading="lazy"
+                />
+              </picture>
             </div>
             <div className="featured-art__caption">
               <p className="featured-art__overline">Featured Artist</p>

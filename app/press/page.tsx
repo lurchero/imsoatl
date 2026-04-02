@@ -66,14 +66,22 @@ export default function Press() {
       {/* ── PRESS HERO IMAGE ── */}
       <section style={{ borderBottom: "1px solid var(--rule)", overflow: "hidden" }}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/assets/chillyo/kings-on-the-block.jpg"
-          srcSet="/assets/chillyo/kings-on-the-block-400.jpg 400w, /assets/chillyo/kings-on-the-block-800.jpg 800w, /assets/chillyo/kings-on-the-block-1200.jpg 1200w"
-          sizes="100vw"
-          alt="Kings on the Block — Omar Chilly-O Mitchell. Classic Atlanta Project."
-          loading="lazy"
-          style={{ width: "100%", height: "auto", display: "block" }}
-        />
+        <picture>
+          <source
+            type="image/webp"
+            srcSet="/assets/chillyo/kings-on-the-block-400.webp 400w, /assets/chillyo/kings-on-the-block-800.webp 800w, /assets/chillyo/kings-on-the-block-1200.webp 1200w"
+            sizes="100vw"
+          />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/assets/chillyo/kings-on-the-block.jpg"
+            srcSet="/assets/chillyo/kings-on-the-block-400.jpg 400w, /assets/chillyo/kings-on-the-block-800.jpg 800w, /assets/chillyo/kings-on-the-block-1200.jpg 1200w"
+            sizes="100vw"
+            alt="Kings on the Block — Omar Chilly-O Mitchell. Classic Atlanta Project."
+            loading="lazy"
+            style={{ width: "100%", height: "auto", display: "block" }}
+          />
+        </picture>
       </section>
 
       {/* ── OFFICIAL BOILERPLATE ── */}

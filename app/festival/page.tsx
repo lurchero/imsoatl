@@ -221,14 +221,21 @@ export default function Festival() {
             }}
           >
             <div className="img-wrap r-3-2 reveal">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/assets/chillyo/piedmont-park.jpg"
-                srcSet="/assets/chillyo/piedmont-park-400.jpg 400w, /assets/chillyo/piedmont-park-800.jpg 800w, /assets/chillyo/piedmont-park-1200.jpg 1200w"
-                sizes="(max-width: 768px) 100vw, 50vw"
-                alt="Piedmont Park, Lake Clara Meer — Atlanta"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcSet="/assets/chillyo/piedmont-park-400.webp 400w, /assets/chillyo/piedmont-park-800.webp 800w, /assets/chillyo/piedmont-park-1200.webp 1200w"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/assets/chillyo/piedmont-park.jpg"
+                  srcSet="/assets/chillyo/piedmont-park-400.jpg 400w, /assets/chillyo/piedmont-park-800.jpg 800w, /assets/chillyo/piedmont-park-1200.jpg 1200w"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  alt="Piedmont Park, Lake Clara Meer — Atlanta"
+                  loading="lazy"
+                />
+              </picture>
             </div>
             <div className="reveal reveal-delay-2">
               <p className="t-label" style={{ marginBottom: "1.4rem" }}>
