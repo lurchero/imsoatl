@@ -68,6 +68,8 @@ export default function Press() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/assets/chillyo/kings-on-the-block.jpg"
+          srcSet="/assets/chillyo/kings-on-the-block-400.jpg 400w, /assets/chillyo/kings-on-the-block-800.jpg 800w, /assets/chillyo/kings-on-the-block-1200.jpg 1200w"
+          sizes="100vw"
           alt="Kings on the Block — Omar Chilly-O Mitchell. Classic Atlanta Project."
           loading="lazy"
           style={{ width: "100%", height: "auto", display: "block" }}

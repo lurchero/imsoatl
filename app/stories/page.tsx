@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
+function gallerySet(src: string): string {
+  const base = src.replace(/\.jpg$/, "");
+  return `${base}-400.jpg 400w, ${base}-800.jpg 800w, ${src} 1200w`;
+}
+
 export const metadata: Metadata = {
   title: "Stories — I'M SO ATL",
   description:
@@ -221,7 +226,13 @@ export default function Stories() {
             ].map((item) => (
               <div key={item.title} className="chillyo-gallery__item">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={item.src} alt={`${item.title} — Omar Chilly-O Mitchell`} loading="lazy" />
+                <img
+                  src={item.src}
+                  srcSet={gallerySet(item.src)}
+                  sizes="(max-width: 600px) calc(50vw - 1rem), (max-width: 1200px) 380px, 480px"
+                  alt={`${item.title} — Omar Chilly-O Mitchell`}
+                  loading="lazy"
+                />
                 <div className="chillyo-gallery__caption">
                   <span>{item.title}</span>
                 </div>
