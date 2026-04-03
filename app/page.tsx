@@ -39,6 +39,25 @@ export default function Home() {
             </Link>
           </div>
         </div>
+        {/* Hero visual — right-side split, fades in from right edge */}
+        <div className="hero__visual" aria-hidden="true">
+          <picture>
+            <source
+              type="image/webp"
+              srcSet="/assets/skate_musicians-400.webp 400w, /assets/skate_musicians-800.webp 800w, /assets/skate_musicians-1200.webp 1200w"
+              sizes="52vw"
+            />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/assets/skate_musicians.jpg"
+              srcSet="/assets/skate_musicians-400.jpg 400w, /assets/skate_musicians-800.jpg 800w, /assets/skate_musicians-1200.jpg 1200w"
+              sizes="52vw"
+              alt="Atlanta skaters and musicians — Omar Chilly-O Mitchell"
+              loading="eager"
+            />
+          </picture>
+        </div>
+
         <div className="hero__datum" role="list" aria-label="Key details">
           <div className="hero__datum-item" role="listitem">
             <span className="hero__datum-label">Festival</span>

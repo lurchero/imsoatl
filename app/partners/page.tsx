@@ -226,39 +226,7 @@ export default function Partners() {
                   <h3 className="tier-row__name">{tier.name}</h3>
                 </div>
                 <div>
-                  <p className="tier-row__desc" style={{ marginBottom: "1rem" }}>
-                    {tier.desc}
-                  </p>
-                  <ul
-                    style={{
-                      display: "flex",
-                      flexDirection: "column",
-                      gap: "0.25rem",
-                    }}
-                  >
-                    {tier.benefits.map((b) => (
-                      <li
-                        key={b}
-                        style={{
-                          fontSize: "0.76rem",
-                          color: "var(--ink-3)",
-                          paddingLeft: "1rem",
-                          position: "relative",
-                        }}
-                      >
-                        <span
-                          style={{
-                            position: "absolute",
-                            left: 0,
-                            color: "var(--blue)",
-                          }}
-                        >
-                          —
-                        </span>
-                        {b}
-                      </li>
-                    ))}
-                  </ul>
+                  <p className="tier-row__desc">{tier.desc}</p>
                 </div>
                 <Link href="/contact?type=partner" className="tier-row__cta">
                   Inquire

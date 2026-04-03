@@ -219,7 +219,7 @@ export default function Press() {
                     Asset Download Portal
                   </p>
                   <p style={{ fontSize: "0.82rem", color: "var(--ink-3)" }}>
-                    Available to credentialed press. Launching spring 2026.
+                    Available to credentialed press. Launching summer 2026.
                   </p>
                 </div>
                 <Link href="/contact?type=press" className="btn btn-outline">

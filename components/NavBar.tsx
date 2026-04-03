@@ -27,11 +27,6 @@ export default function NavBar() {
           <li>
             <Link href="/about">About</Link>
           </li>
-          <li>
-            <Link href="/contact?type=artist" className="nav__apply">
-              Apply
-            </Link>
-          </li>
         </ul>
         <button
           className="nav__burger"
@@ -51,7 +46,6 @@ export default function NavBar() {
         <Link href="/partners">Partners</Link>
         <Link href="/press">Press</Link>
         <Link href="/about">About</Link>
-        <Link href="/contact?type=artist">Apply</Link>
       </nav>
     </>
   );

@@ -290,12 +290,29 @@ input, textarea, select { cursor: text !important; }
   padding-top: var(--nav-h);
   background: var(--white);
   border-bottom: 1px solid var(--rule);
+  position: relative; overflow: hidden;
 }
 .hero__body {
   flex: 1; display: flex; flex-direction: column;
   justify-content: flex-end;
   padding: 0 var(--gutter) 4.5rem;
   max-width: 1360px; margin: 0 auto; width: 100%;
+  position: relative; z-index: 1;
+}
+.hero__datum { position: relative; z-index: 1; }
+.hero__visual {
+  position: absolute;
+  inset: 0 0 0 48%;
+  overflow: hidden;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 22%, black 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 22%, black 100%);
+  opacity: 0; animation: hIn 1s var(--ease) 0.35s forwards;
+}
+.hero__visual img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: 35% center;
+  display: block;
 }
 .hero__timing {
   display: flex; align-items: center; gap: 1rem;
@@ -498,6 +515,7 @@ input, textarea, select { cursor: text !important; }
 
   .hero__support { display: none; }
   .hero__actions .btn-outline { display: none; }
+  .hero__visual { display: none; }
   .hero__datum { grid-template-columns: 1fr 1fr; overflow-x: auto; scrollbar-width: none; }
   .hero__datum::-webkit-scrollbar { display: none; }
   .hero__datum-item:nth-child(3),
