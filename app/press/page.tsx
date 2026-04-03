@@ -280,6 +280,58 @@ export default function Press() {
         </div>
       </section>
 
+      {/* ── EDITORIAL COVERAGE ── */}
+      <section className="section section--alt" style={{ borderBottom: "1px solid var(--rule)" }}>
+        <div className="container">
+          <div className="reveal" style={{ marginBottom: "2.5rem" }}>
+            <p className="t-label" style={{ marginBottom: "0.9rem" }}>
+              In the Press
+            </p>
+            <h2
+              style={{
+                fontSize: "clamp(1.4rem,2vw,1.9rem)",
+                fontWeight: 400,
+                color: "var(--ink)",
+                letterSpacing: "-0.015em",
+                lineHeight: 1.2,
+              }}
+            >
+              Editorial coverage.
+            </h2>
+          </div>
+          <div
+            className="reveal reveal-delay-1"
+            style={{
+              padding: "2rem",
+              background: "var(--whisper)",
+              border: "1px solid var(--rule)",
+              maxWidth: "640px",
+            }}
+          >
+            <p
+              style={{
+                fontSize: "0.7rem",
+                fontWeight: 500,
+                letterSpacing: "0.12em",
+                textTransform: "uppercase",
+                color: "var(--ink-4)",
+                marginBottom: "0.5rem",
+              }}
+            >
+              Coverage Archive
+            </p>
+            <p style={{ fontSize: "0.86rem", color: "var(--ink-3)", lineHeight: 1.7 }}>
+              Editorial coverage will be listed here as it publishes ahead of Artlanta 2026. For
+              press inquiries, contact{" "}
+              <a href="mailto:rachel@tobinink.com" style={{ color: "var(--ink-2)" }}>
+                rachel@tobinink.com
+              </a>
+              .
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* ── CTA ── */}
       <div className="cta-band cta-band--light">
         <div className="container">

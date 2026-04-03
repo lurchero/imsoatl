@@ -175,7 +175,7 @@ export default function Home() {
       {/* ══════════════════════════════════════
           S5 — FEATURED ART ZONE
       ══════════════════════════════════════════ */}
-      <section className="featured-art section--alt section">
+      <section className="featured-art section--alt section section--top-lg">
         <div className="container">
           <div className="featured-art__header reveal">
             <div>
@@ -328,7 +328,7 @@ export default function Home() {
       {/* ══════════════════════════════════════
           S8 — PARTICIPATION PATHWAYS
       ══════════════════════════════════════════ */}
-      <section className="pathways section">
+      <section className="pathways section section--btm-lg">
         <div className="container">
           <div className="pathways__header reveal">
             <div>

@@ -222,7 +222,11 @@ input, textarea, select { cursor: text !important; }
 .section--sm  { padding: clamp(3rem, 5vw, 4.5rem) 0; }
 .section--lg  { padding: clamp(8rem, 14vw, 13rem) 0; }
 .section--silence { padding: clamp(9rem, 18vw, 17rem) 0; }
-.section--alt     { background: var(--white-alt); }
+/* Asymmetric padding — top heavy (more space before, less after) */
+.section--top-lg { padding-top: clamp(7rem, 13vw, 12rem); padding-bottom: clamp(4rem, 6vw, 5rem); }
+/* Bottom heavy — leads into the next section */
+.section--btm-lg { padding-top: clamp(4rem, 6vw, 5rem); padding-bottom: clamp(7rem, 13vw, 12rem); }
+.section--alt     { background-color: var(--white-alt); background-image: repeating-linear-gradient(45deg, transparent, transparent 3px, rgba(0,0,0,0.012) 3px, rgba(0,0,0,0.012) 4px); }
 .section--ink     { background: var(--ink); color: var(--white); }
 
 /* ── REVEAL ── */
@@ -381,9 +385,9 @@ input, textarea, select { cursor: text !important; }
 .proof-strip__value.hi { color: var(--blue); }
 
 /* ── PLATFORM INTRO ── */
-.platform-intro { padding: clamp(6rem,11vw,10rem) 0; border-bottom: 1px solid var(--rule); }
+.platform-intro { padding: clamp(6rem,11vw,10rem) 0; border-bottom: 1px solid var(--rule); overflow: hidden; }
 .platform-intro__grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(4rem,8vw,9rem); align-items: center; }
-.platform-intro__img { overflow: hidden; background: var(--whisper); position: relative; }
+.platform-intro__img { overflow: hidden; background: var(--whisper); position: relative; left: calc(-1 * var(--gutter)); width: calc(100% + var(--gutter)); }
 .platform-intro__img img { width: 100%; height: auto; display: block; filter: grayscale(20%); transition: transform 0.7s var(--ease); }
 .platform-intro__img:hover img { transform: scale(1.025); }
 .platform-intro__right { display: flex; flex-direction: column; gap: 1.8rem; }
@@ -533,7 +537,7 @@ input, textarea, select { cursor: text !important; }
   .hero__datum-item:nth-child(5) { display: none; }
 
   .platform-intro__grid { grid-template-columns: 1fr; }
-  .platform-intro__img { aspect-ratio: auto; }
+  .platform-intro__img { aspect-ratio: auto; left: 0; width: 100%; }
 
   .artlanta-feature__inner { grid-template-columns: 1fr; }
   .artlanta-feature__visual { min-height: 260px; }
