@@ -473,70 +473,28 @@ export default function Home() {
             <div className="partner-cat">
               <span className="partner-cat__label">Presenting</span>
               <div className="partner-cat__logos">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/assets/logos/amaac.webp"
-                  alt="AMAAC Foundation"
-                  className="partner-logo-img"
-                  style={{ height: "28px" }}
-                />
+                <span className="partner-name">AMAAC Foundation</span>
               </div>
             </div>
             <div className="partner-cat">
               <span className="partner-cat__label">Production</span>
               <div className="partner-cat__logos">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/assets/logos/aim.webp"
-                  alt="Atlanta Indie Market"
-                  className="partner-logo-img"
-                  style={{ height: "38px" }}
-                />
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/assets/logos/bonfire.webp"
-                  alt="Bonfire"
-                  className="partner-logo-img"
-                  style={{ height: "34px" }}
-                />
+                <span className="partner-name">Atlanta Indie Market</span>
+                <span className="partner-name">Bonfire</span>
               </div>
             </div>
             <div className="partner-cat">
               <span className="partner-cat__label">Media</span>
               <div className="partner-cat__logos">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/assets/logos/hype.webp"
-                  alt="The Hype Magazine"
-                  className="partner-logo-img"
-                  style={{ height: "26px" }}
-                />
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/assets/logos/expatl.webp"
-                  alt="ExpATL"
-                  className="partner-logo-img"
-                  style={{ height: "20px" }}
-                />
+                <span className="partner-name">The Hype Magazine</span>
+                <span className="partner-name">ExpATL</span>
               </div>
             </div>
             <div className="partner-cat">
               <span className="partner-cat__label">Agency &amp; Technology</span>
               <div className="partner-cat__logos">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/assets/logos/tobin.webp"
-                  alt="Tobin Ink PR"
-                  className="partner-logo-img"
-                  style={{ height: "24px" }}
-                />
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/assets/logos/rebelity.webp"
-                  alt="Rebelity Software"
-                  className="partner-logo-img"
-                  style={{ height: "24px" }}
-                />
+                <span className="partner-name">Tobin Ink PR</span>
+                <span className="partner-name">Rebelity Software</span>
               </div>
             </div>
           </div>

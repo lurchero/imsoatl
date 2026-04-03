@@ -70,13 +70,13 @@ const tiers = [
 ];
 
 const currentPartners = [
-  { name: "AMAAC Foundation", category: "Presenting", logo: "/assets/logos/amaac.webp", height: 28 },
-  { name: "Atlanta Indie Market", category: "Production", logo: "/assets/logos/aim.webp", height: 38 },
-  { name: "Bonfire", category: "Production", logo: "/assets/logos/bonfire.webp", height: 34 },
-  { name: "The Hype Magazine", category: "Media", logo: "/assets/logos/hype.webp", height: 26 },
-  { name: "ExpATL", category: "Media", logo: "/assets/logos/expatl.webp", height: 20 },
-  { name: "Tobin Ink PR", category: "Agency & Technology", logo: "/assets/logos/tobin.webp", height: 24 },
-  { name: "Rebelity Software", category: "Agency & Technology", logo: "/assets/logos/rebelity.webp", height: 24 },
+  { name: "AMAAC Foundation", category: "Presenting" },
+  { name: "Atlanta Indie Market", category: "Production" },
+  { name: "Bonfire", category: "Production" },
+  { name: "The Hype Magazine", category: "Media" },
+  { name: "ExpATL", category: "Media" },
+  { name: "Tobin Ink PR", category: "Agency & Technology" },
+  { name: "Rebelity Software", category: "Agency & Technology" },
 ];
 
 export default function Partners() {
@@ -255,14 +255,7 @@ export default function Partners() {
                   {currentPartners
                     .filter((p) => p.category === cat)
                     .map((p) => (
-                      // eslint-disable-next-line @next/next/no-img-element
-                      <img
-                        key={p.name}
-                        src={p.logo}
-                        alt={p.name}
-                        className="partner-logo-img"
-                        style={{ height: `${p.height}px` }}
-                      />
+                      <span key={p.name} className="partner-name">{p.name}</span>
                     ))}
                 </div>
               </div>

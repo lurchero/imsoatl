@@ -233,12 +233,17 @@ export default function About() {
                   marginBottom: "1.5rem",
                 }}
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/assets/logos/amaac.webp"
-                  alt="AMAAC Foundation"
-                  style={{ height: "32px", filter: "brightness(0)", marginBottom: "1.2rem" }}
-                />
+                <p
+                  style={{
+                    fontSize: "0.88rem",
+                    fontWeight: 600,
+                    color: "var(--ink)",
+                    letterSpacing: "-0.01em",
+                    marginBottom: "1.2rem",
+                  }}
+                >
+                  AMAAC Foundation
+                </p>
                 <p
                   style={{
                     fontSize: "0.68rem",
