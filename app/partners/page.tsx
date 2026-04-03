@@ -255,15 +255,14 @@ export default function Partners() {
                   {currentPartners
                     .filter((p) => p.category === cat)
                     .map((p) => (
-                      <div key={p.name} className="partner-logo-wrap">
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img
-                          src={p.logo}
-                          alt={p.name}
-                          className="partner-logo-img"
-                          style={{ height: `${p.height}px` }}
-                        />
-                      </div>
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        key={p.name}
+                        src={p.logo}
+                        alt={p.name}
+                        className="partner-logo-img"
+                        style={{ height: `${p.height}px` }}
+                      />
                     ))}
                 </div>
               </div>

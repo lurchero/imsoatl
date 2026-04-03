@@ -238,20 +238,14 @@ input, textarea, select { cursor: text !important; }
 .r-21-9 { aspect-ratio: 21/9; }
 
 /* ── PARTNER LOGOS ── */
-.partner-logo-wrap {
-  display: inline-flex; align-items: center; justify-content: flex-start;
-  background: var(--ink);
-  padding: 0.55rem 1rem;
-  border-radius: 4px;
-  transition: opacity 0.25s;
-  opacity: 0.85;
-}
-.partner-logo-wrap:hover { opacity: 1; }
 .partner-logo-img {
-  max-height: 40px; width: auto; height: auto; max-width: 150px;
+  max-height: 44px; width: auto; height: auto; max-width: 160px;
   display: block;
-  filter: brightness(0) invert(1);
+  filter: brightness(0);
+  opacity: 0.7;
+  transition: opacity 0.25s;
 }
+.partner-logo-img:hover { opacity: 1; }
 
 /* ── FOOTER ── */
 .footer { background: var(--ink); color: var(--white); padding: clamp(4rem, 8vw, 7rem) 0 0; }
