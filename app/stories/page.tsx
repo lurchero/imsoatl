@@ -205,13 +205,23 @@ export default function Stories() {
             </span>
           </div>
 
+          <div className="reveal reveal-delay-1" style={{ marginBottom: "2.5rem", maxWidth: "620px" }}>
+            <p className="t-body--sm" style={{ lineHeight: 1.8 }}>
+              Omar &ldquo;Chilly-O&rdquo; Mitchell is an Atlanta-based photographer whose work
+              constitutes the core visual archive of I&apos;M SO ATL. Over more than a decade, his
+              lens has documented the people, energy, and cultural identity of the city — portraits,
+              street work, and editorial that render Atlanta on its own terms. These photographs are
+              not illustration. They are the primary document.
+            </p>
+          </div>
+
           <div className="chillyo-gallery reveal">
             {[
-              { src: "/assets/chillyo/kings-on-the-block.jpg", title: "Kings on the Block" },
+              { src: "/assets/chillyo/kings-on-the-block.jpg", title: "Kings on the Block", large: true },
               { src: "/assets/chillyo/portrait.jpg", title: "Portrait" },
               { src: "/assets/chillyo/life-is-art.jpg", title: "Life is Art" },
               { src: "/assets/chillyo/we-up-future.jpg", title: "We Up Future" },
-              { src: "/assets/chillyo/inner-child.jpg", title: "Inner Child" },
+              { src: "/assets/chillyo/inner-child.jpg", title: "Inner Child", large: true },
               { src: "/assets/chillyo/love-me-hoodie.jpg", title: "Love Me Hoodie" },
               { src: "/assets/chillyo/wheel-of-fortune.jpg", title: "Wheel of Fortune" },
               { src: "/assets/chillyo/gulch-75.jpg", title: "Gulch 75" },
@@ -224,7 +234,7 @@ export default function Stories() {
               { src: "/assets/chillyo/indigenous.jpg", title: "Indigenous" },
               { src: "/assets/chillyo/beltline.jpg", title: "Atlanta Beltline" },
             ].map((item) => (
-              <div key={item.title} className="chillyo-gallery__item">
+              <div key={item.title} className={`chillyo-gallery__item${(item as { large?: boolean }).large ? " chillyo-gallery__item--large" : ""}`}>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={item.src}

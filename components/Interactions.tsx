@@ -74,6 +74,7 @@ export default function Interactions() {
       mobileNav.classList.add("open");
       burger && burger.classList.add("open");
       burger && burger.setAttribute("aria-expanded", "true");
+      nav && nav.classList.add("menu-open");
       document.body.style.overflow = "hidden";
       if (navLinks[0]) setTimeout(() => navLinks[0].focus(), 50);
     }
@@ -82,6 +83,7 @@ export default function Interactions() {
       mobileNav.classList.remove("open");
       burger && burger.classList.remove("open");
       burger && burger.setAttribute("aria-expanded", "false");
+      nav && nav.classList.remove("menu-open");
       document.body.style.overflow = "";
       burger && burger.focus();
     }

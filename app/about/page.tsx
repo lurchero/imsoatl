@@ -151,7 +151,7 @@ export default function About() {
               <h2 className="t-h2" style={{ marginBottom: "2rem" }}>
                 Atlanta&apos;s culture doesn&apos;t need to be explained.
                 <br />
-                <span style={{ fontFamily: "var(--font-serif)", fontStyle: "italic" }}>
+                <span style={{ fontFamily: "var(--font-display)", fontStyle: "italic" }}>
                   It needs to be documented.
                 </span>
               </h2>
@@ -169,6 +169,15 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      {/* ── EDITORIAL IMAGE BREAK ── */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/assets/chillyo/kings-on-the-block.jpg"
+        alt="Kings on the Block — Omar Chilly-O Mitchell. Classic Atlanta Project."
+        loading="lazy"
+        style={{ width: "100%", display: "block", maxHeight: "520px", objectFit: "cover", objectPosition: "center 30%" }}
+      />
 
       {/* ── FOUR INITIATIVES ── */}
       <section className="expressions section" style={{ borderBottom: "1px solid var(--rule)" }}>

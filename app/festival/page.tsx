@@ -355,7 +355,7 @@ export default function Festival() {
               paddingTop: "2rem",
             }}
           >
-            Full schedule and programming details released spring 2026. Sign up for updates below.
+            Full schedule and programming details published summer 2026. Sign up for updates below.
           </p>
         </div>
       </section>

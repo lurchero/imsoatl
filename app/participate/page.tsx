@@ -33,7 +33,7 @@ const pathways = [
       "Artlanta invites visual artists of all disciplines to apply for exhibition within the festival's primary environment — 50+ purpose-built structures at Piedmont Park. This is a juried selection.",
     eligibility:
       "Visual artists working in any medium. Atlanta-based preferred. Portfolio submission required.",
-    deadline: "TBA — Spring 2026",
+    deadline: "TBA — Summer 2026",
     cta: "Apply as an Artist",
     href: "/contact?type=artist",
   },
@@ -48,7 +48,7 @@ const pathways = [
       "The Artlanta Visual Art Market is powered by Atlanta Indie Market. Present original work, prints, and cultural goods within a high-visibility public environment at Piedmont Park. This is a curated selection — not a general craft fair.",
     eligibility:
       "Visual artists, designers, and makers with original work. Juried selection process.",
-    deadline: "TBA — Spring 2026",
+    deadline: "TBA — Summer 2026",
     cta: "Apply as a Vendor",
     href: "/contact?type=vendor",
   },
@@ -101,7 +101,7 @@ const pathways = [
     label: "Supporters & Patrons",
     title: "Support the Platform",
     status: "blue" as const,
-    statusText: "Launching Spring 2026",
+    statusText: "Launching Summer 2026",
     summary:
       "Your support sustains AMAAC Foundation's programming and the cultural infrastructure that I'M SO ATL delivers year-round. The patron program connects supporters directly to the artists and programs they make possible.",
     eligibility: "Open to all. No minimum contribution required.",
@@ -208,7 +208,7 @@ export default function Participate() {
         <div className="container">
           <div className="pathway-list" role="list">
             {pathways.map((p) => (
-              <div key={p.id} id={p.id} className="pathway-row" role="listitem">
+              <div key={p.id} id={p.id} className={`pathway-row${parseInt(p.num) <= 2 ? " pathway-row--priority" : ""}`} role="listitem">
                 <span className="pathway-row__num">{p.num}</span>
                 <h2 className="pathway-row__title">{p.label}</h2>
                 <div style={{ display: "flex", flexDirection: "column", gap: "0.8rem" }}>

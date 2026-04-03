@@ -26,7 +26,7 @@ const infoItems = [
   { label: "Venue", value: "Piedmont Park", note: "Atlanta, Georgia" },
   { label: "Address", value: "400 Park Drive NE, Atlanta, GA 30306", note: "Main entrance" },
   { label: "Admission", value: "Free", note: "No ticket required — open to all" },
-  { label: "Hours", value: "TBA", note: "Full schedule published spring 2026" },
+  { label: "Hours", value: "TBA", note: "Full schedule published summer 2026" },
   { label: "MARTA", value: "North Avenue Station", note: "Red/Gold Line — 15 min walk to park" },
   { label: "Parking", value: "Limited on-site", note: "Public transit and ride-share strongly recommended" },
   { label: "Accessibility", value: "Piedmont Park is ADA accessible", note: "Full accessibility guide TBA" },
@@ -218,6 +218,15 @@ export default function Visit() {
           </div>
         </div>
       </section>
+
+      {/* ── VENUE PHOTOGRAPH ── */}
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/assets/chillyo/piedmont-park.jpg"
+        alt="Piedmont Park, Lake Clara Meer — Atlanta"
+        loading="lazy"
+        style={{ width: "100%", display: "block", maxHeight: "480px", objectFit: "cover", objectPosition: "center 40%" }}
+      />
 
       {/* ── ACCESSIBILITY + WHAT TO KNOW ── */}
       <section className="section section--alt" style={{ borderBottom: "1px solid var(--rule)" }}>
