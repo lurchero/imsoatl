@@ -434,11 +434,13 @@ input, textarea, select { cursor: text !important; }
 .expr-row:hover .expr-row__cta { gap: 0.55rem; }
 
 /* ── THESIS / SILENCE ── */
-.thesis-block { border-top: 1px solid var(--rule); }
+.thesis-block { border-top: 1px solid var(--rule); min-height: 80vh; display: flex; flex-direction: column; justify-content: center; }
 .thesis-block__inner { max-width: 820px; }
 .thesis-block__quote { font-family: var(--font-serif); font-size: clamp(2rem,4vw,3.8rem); font-style: italic; font-weight: 400; color: var(--ink); line-height: 1.28; letter-spacing: -0.01em; margin-bottom: 4rem; }
 .thesis-block__rule { height: 1px; background: var(--rule); margin-bottom: 2.5rem; max-width: 480px; }
 .thesis-block__support { font-size: clamp(0.9rem,1.1vw,0.98rem); color: var(--ink-3); line-height: 1.8; max-width: 520px; }
+.thesis-block__world-eyebrow { font-size: 0.63rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--blue); margin-top: 4rem; margin-bottom: 1rem; }
+.thesis-block__world-headline { font-size: clamp(2rem,4.5vw,4rem); font-weight: 300; line-height: 1.08; letter-spacing: -0.02em; color: var(--ink); }
 
 /* ── PATHWAYS ── */
 .pathways { padding: clamp(6rem,11vw,10rem) 0; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
@@ -561,7 +563,9 @@ input, textarea, select { cursor: text !important; }
   .pathways__hint { display: flex; }
 
   .section--silence { padding: clamp(5rem,12vw,9rem) 0; }
+  .thesis-block { min-height: 70vh; }
   .thesis-block__quote { font-size: clamp(1.6rem,5vw,2.8rem); }
+  .thesis-block__world-headline { font-size: clamp(1.6rem,5vw,2.6rem); }
 
   .credibility__header { grid-template-columns: 1fr; gap: 2rem; }
   .partner-categories { grid-template-columns: 1fr 1fr; }

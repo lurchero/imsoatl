@@ -83,36 +83,6 @@ export default function Home() {
       </section>
 
       {/* ══════════════════════════════════════
-          S2 — PROOF STRIP
-      ══════════════════════════════════════════ */}
-      <div className="proof-strip" role="complementary" aria-label="Platform facts">
-        <div className="proof-strip__inner">
-          <div className="proof-strip__item">
-            <span className="proof-strip__label">Date</span>
-            <span className="proof-strip__value" style={{ color: "var(--red)" }}>
-              AUG 7–9, 2026
-            </span>
-          </div>
-          <div className="proof-strip__item">
-            <span className="proof-strip__label">Venue</span>
-            <span className="proof-strip__value">PIEDMONT PARK</span>
-          </div>
-          <div className="proof-strip__item">
-            <span className="proof-strip__label">Scale</span>
-            <span className="proof-strip__value hi">50+ PLANNED STRUCTURES</span>
-          </div>
-          <div className="proof-strip__item">
-            <span className="proof-strip__label">Citywide</span>
-            <span className="proof-strip__value">INSTALLATIONS BEGINNING MAY 2026</span>
-          </div>
-          <div className="proof-strip__item">
-            <span className="proof-strip__label">Admission</span>
-            <span className="proof-strip__value hi">FREE TO THE PUBLIC</span>
-          </div>
-        </div>
-      </div>
-
-      {/* ══════════════════════════════════════
           S3 — PLATFORM INTRO
           NOTE: b_money.jpg is a missing asset — placeholder used.
           Replace with: architectural/cinematic Atlanta public space image (4:5 ratio)
@@ -194,8 +164,8 @@ export default function Home() {
               </span>
             </div>
             <div className="reveal reveal-delay-3">
-              <Link href="/festival" className="btn btn-primary">
-                View the Festival
+              <Link href="/festival" className="btn-text">
+                View the Festival →
               </Link>
             </div>
           </div>
@@ -345,6 +315,12 @@ export default function Home() {
               site of cultural authorship — where public space, artistic expression, and collective
               memory come into view through a new exhibition frame.
             </p>
+            <p className="thesis-block__world-eyebrow">I&apos;M SO ATL &middot; Artlanta &middot; Atlanta 2026</p>
+            <h2 className="thesis-block__world-headline">
+              Presented from Atlanta.
+              <br />
+              Addressed to the World.
+            </h2>
           </div>
         </div>
       </section>
@@ -563,27 +539,6 @@ export default function Home() {
                 />
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════
-          S10 — GLOBAL VISIBILITY
-      ══════════════════════════════════════════ */}
-      <section className="global-block">
-        <div className="container">
-          <div className="global-block__inner reveal">
-            <p className="global-block__eyebrow">I&apos;M SO ATL · Artlanta · Atlanta 2026</p>
-            <h2 className="global-block__headline">
-              Presented from Atlanta.
-              <br />
-              Addressed to the World.
-            </h2>
-            <p className="global-block__body">
-              As Atlanta welcomes the world, I&apos;M SO ATL positions the city not only as a
-              destination, but as a cultural platform with international relevance — a public
-              statement about what Atlanta makes, how it gathers, and how it should be experienced.
-            </p>
           </div>
         </div>
       </section>
